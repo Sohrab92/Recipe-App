@@ -1,0 +1,120 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "font.css";
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
+/* Recipe List */
+
+.recipe-list {
+  border-right: 1px solid black;
+  min-height: 100vh;
+  width: 50%;
+}
+
+.recipe-list__add-recipe-btn-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Recipe */
+
+.recipe {
+  padding: 2rem;
+  border-bottom: 1px solid black;
+}
+
+.recipe:last-child {
+  border-bottom: none;
+  padding-bottom: 1.8rem;
+}
+
+.recipe__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+.recipe__title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.recipe__row {
+  margin-top: 0.8rem;
+}
+
+.recipe__label {
+  margin-right: 0.8rem;
+}
+
+.recipe__value {
+  font-weight: 300;
+}
+
+.recipe__value--indented {
+  margin-top: 0.8rem;
+  margin-left: 1.8rem;
+}
+
+.recipe__instructions {
+  white-space: pre-wrap;
+}
+
+.recipe__ingredients {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 0.8rem;
+  column-gap: 4rem;
+  justify-content: flex-start;
+}
+
+/* Buttons */
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.8rem;
+  cursor: pointer;
+}
+
+.btn--primary {
+  color: white;
+  background-color: hsl(220, 100%, 40%);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: hsl(220, 100%, 30%);
+}
+
+.btn--secondary {
+  color: white;
+  background-color: hsl(0, 100%, 40%);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus {
+  background-color: hsl(0, 100%, 30%);
+}
