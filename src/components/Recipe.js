@@ -4,7 +4,7 @@ import { RecipeContext } from "./App";
 
 export default function Recipe(props) {
   const { deleteRecipe } = useContext(RecipeContext);
-  const { id, name, cookingTime, servings, instructions, ingredients } = props;
+  const { id, name, cookTime, servings, instructions, ingredients } = props;
 
   return (
     <div className="recipe">
@@ -21,8 +21,8 @@ export default function Recipe(props) {
         </div>
       </div>
       <div className="recipe__row">
-        <span className="recipe__label">Cooking Time:</span>
-        <span className="recipe__value">{cookingTime}</span>
+        <span className="recipe__label">Cook Time:</span>
+        <span className="recipe__value">{cookTime}</span>
       </div>
       <div className="recipe__row">
         <span className="recipe__label">Servings:</span>
